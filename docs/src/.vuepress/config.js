@@ -16,9 +16,25 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['link', { rel:'apple-touch-icon', sizes:'57x57', href:'icons/apple-icon-57x57.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'60x60', href:'icons/apple-icon-60x60.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'60x60', href:'icons/apple-icon-60x60.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'60x60', href:'icons/apple-icon-60x60.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'72x72', href:'icons/apple-icon-72x72.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'76x76', href:'icons/apple-icon-76x76.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'114x114', href:'icons/apple-icon-114x114.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'120x120', href:'icons/apple-icon-120x120.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'144x144', href:'icons/apple-icon-144x144.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'152x152', href:'icons/apple-icon-152x152.png'}],
+    ['link', { rel:'apple-touch-icon', sizes:'180x180', href:'icons/apple-icon-180x180.png'}],
+    ['link', { rel:'icon', type:'image/png', sizes:'192x192',  href:'icons/android-icon-192x192.png'}],
+    ['link', { rel:'icon', type:'image/png', sizes:'32x32', href:'icons/favicon-32x32.png'}],
+    ['link', { rel:'icon', type:'image/png', sizes:'96x96', href:'icons/favicon-96x96.png'}],
+    ['link', { rel:'icon', type:'image/png', sizes:'16x16', href:'icons/favicon-16x16.png'}],
+    ['link', { rel:'manifest', href:'icons/manifest.json'}],
+    ['meta', { name:'msapplication-TileColor', content:'#ffffff'}],
+    ['meta', { name:'msapplication-TileImage', content:'/ms-icon-144x144.png'}],
+    ['meta', { name:'theme-color', content:'#ffffff'}],
   ],
 
   /**
@@ -27,27 +43,29 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    logo: '/logo-grupo-vue.png',
     repo: '',
+    lastUpdated: 'Last Updated',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
     nav: [
       {
-        text: 'Recursos',
-        link: '/recursos/',
+        text: 'Guía',
+        link: '/guia/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Grupo',
+        link: 'https://t.me/vuejsEs/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Canal',
+        link: 'https://t.me/VuejsEspCanal.vuejs.org'
       }
     ],
     sidebar: {
-      '/recursos/': [
+      '/guia/': [
         {
           title: 'Recursos',
           collapsable: false,
@@ -60,35 +78,28 @@ module.exports = {
           ]
         },
         {
-          title: 'Librerias',
+          title: 'Librerías',
           collapsable: false,
           children: [
             'librerias-de-componentes',
             'librerias-de-grillas',
             'librerias-de-arquitecturas',
-            'librerias-de desarrollo-multiplataforma'          
+            'librerias-de-desarrollo-multiplataforma',
+            'librerias-especiales'
           ]
         },
         {
-          title: 'Recursos444444444444444444',
+          title: 'SPA/SSR',
           collapsable: false,
           children: [
-            '',
-            'cursos-de-youtube',
-            'cursos-web-plataformas',
-            'meetups',
-            'migracion-de-vue2-a-vue3'
+           'spa-ssr'
           ]
         },
         {
-          title: 'Recurso55555555',
+          title: 'Plataformas mobiles',
           collapsable: false,
           children: [
-            '',
-            'cursos-de-youtube',
-            'cursos-web-plataformas',
-            'meetups',
-            'migracion-de-vue2-a-vue3'
+           'plataformas-mobiles'
           ]
         }
       ],

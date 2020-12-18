@@ -1,4 +1,4 @@
-# Librerias de componentes
+# Librerías de componentes
 
 * [Vuesax](https://lusaxweb.github.io/vuesax/)<br/>
 * [Vuetify](https://vuetifyjs.com/en/)<br/>
